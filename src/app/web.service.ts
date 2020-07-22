@@ -8,7 +8,7 @@ export class WebService {
   readonly ROOT_URL;
 
   constructor(private http: HttpClient ) { 
-    this.ROOT_URL = "http://localhost:3000";
+    this.ROOT_URL = "https://floating-lowlands-91971.herokuapp.com";
   }
   get(uri: string) {
     return this.http.get(`${this.ROOT_URL}/${uri}`);
